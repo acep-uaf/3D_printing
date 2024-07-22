@@ -11,6 +11,7 @@ This document will go over the main steps needed to turn a point-cloud .xyz file
 5. Edit mesh
 6. Move origin
 7. Export as .stl
+
 ### In Solidworks:
 1. Import .stl file
 2. Create mesh body
