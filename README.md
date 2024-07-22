@@ -17,4 +17,5 @@ This document will go over the main steps needed to turn a point-cloud .xyz file
 3. Create base
 4. Trim edges
 5. Export as .stl
+
 You can then open this .stl in any slicing program and print!
