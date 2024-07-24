@@ -137,3 +137,57 @@ Now we can export our mesh as an .stl file.
 ![Export2](/docs/assets/meshlabexport2.png)
 
 ## In Solidworks:
+
+### 1: Import .stl file
+
+Open your mesh .stl in Solidworks.
+
+![Import1](/docs/assets/swimport.png)
+
+Notice that it is imported as a “graphic” in your solidworks feature tree.
+
+### 2: Create mesh body
+
+Now we will turn this “graphic” into a mesh body.
+
+**Mesh Modeling > Convert to Mesh Body**
+
+![Create1](/docs/assets/swcreate.png)
+
+Click on the “graphic” to select it. Then hit the green check. Now a “surface” should appear in your feature tree.
+
+### 3: Create base
+
+Now that we have a surface, let's create a base for our object. We will start by creating a new plane.
+
+**Features > Reference Geometry > Plane**
+
+![Base1](/docs/assets/swbase.png)
+
+Select a plane parallel to your surface as a reference, and offset the new plane so that it **does not** intersect with your surface. Now create a sketch on your new plane that will form the outline of your 3D model. Make sure that no part of the sketch reaches over the edge of your surface. An example is shown below with the rectangular sketch highlighted light blue.
+
+![Base2](/docs/assets/swbase2.png)
+
+Next we will extrude this sketch.
+
+**Features > Extruded Boss/Base**
+
+Select “Up To Surface” in the menu shown below and select your surface as the reference geometry.
+
+![Base3](/docs/assets/swbase3.png)
+
+Hit the green check to extrude.
+
+### 4: Trim edges
+
+Now we will trim the overhanging edges of the surface from our model.
+
+**Mesh Modeling > Trim Surface**
+
+![Base4](/docs/assets/swbase4.png)
+
+Select your extrusion as the “Trim tool” and your surface as the surface to trim.
+
+### 5: Export as .stl
+
+Now save your part as an .stl and export to any slicing program to print.
